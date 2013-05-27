@@ -1,0 +1,7 @@
+require 'sinatra'
+require 'slim'
+require 'rails_config'
+require 'oauth'
+require 'pry'
+require 'pry-debugger'
+require './server.rb'

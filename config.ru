@@ -1,6 +1,7 @@
 require 'rubygems'
-require 'sinatra'
-require 'slim'
-require './server.rb'
+require './require.rb'
+
+set :root, File.dirname(__FILE__)
+register RailsConfig
 
 run Sinatra::Application

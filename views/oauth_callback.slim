@@ -1,0 +1,12 @@
+doctype html
+  p success getting access_token.
+  p your access token is below.
+  
+  dl
+    dt access_token
+    dd= access_token.params[:oauth_token]
+    dt access_token_secret
+    dd= access_token.params[:oauth_token_secret]
+
+  a href="/"
+    back to top
