@@ -24,8 +24,8 @@ end
 get '/oauth' do
   # リクエストトークンの取得
   request_token = @consumer.get_request_token(
-    { :oauth_callback => 'oauth_callback' },
-    :scope => 'read_public, write_public')
+    { :oauth_callback => 'http://localhost:9292/oauth_callback' },
+    :scope => 'read_public,write_public')
 
   # セッションリクエストトークンを保存しておく
   session[:request_token] = request_token.token
